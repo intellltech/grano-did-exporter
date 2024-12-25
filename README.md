@@ -1,5 +1,5 @@
 # Grano DID Exporter
-Grano DID Exporter is a program that retrieves events occurring on [grano-did-contract](https://github.com/eg-easy/grano-did-contract) and stores them in an off-chain database like MariaDB. It depends on [grano-did-client](https://github.com/EG-easy/grano-did-client) to interact with the did contract and [Sequelize](https://github.com/sequelize/sequelize) to save data in the database.
+Grano DID Exporter is a program that retrieves events occurring on [grano-did-contract](https://github.com/intellltech/grano-did-contract) and stores them in an off-chain database like MariaDB. It depends on [grano-did-client](https://github.com/intellltech/grano-did-client) to interact with the did contract and [Sequelize](https://github.com/sequelize/sequelize) to save data in the database.
 
 ## How to Use
 
@@ -27,8 +27,8 @@ CONTRACT_ADDRESS='grano1cefw8elvkj8t63k5ea2mlpkgyxgjlw2g4vw5l7j3txu925ug9ffskc6v
 2. Call Exporter
 
 ```index.js
-const { GranoDidClient } = require('@eg-easy/grano-did-client')
-const { GranoDidExporter } = require('@eg-easy/grano-did-exporter')
+const { GranoDidClient } = require('@intellltech/grano-did-client')
+const { GranoDidExporter } = require('@intellltech/grano-did-exporter')
 
 const main = async () => {
   const granoDidClient = await GranoDidClient.createFulfilled()
@@ -41,8 +41,8 @@ main()
 ```
 
 ## References
-- https://github.com/eg-easy/grano-did
-- https://github.com/EG-easy/grano-did-client
-- https://github.com/EG-easy/grano-did-contract
-- https://github.com/EG-easy/grano-did-node
-- https://github.com/EG-easy/grano-did-resolver
+- https://github.com/intellltech/grano-did
+- https://github.com/intellltech/grano-did-client
+- https://github.com/intellltech/grano-did-contract
+- https://github.com/intellltech/grano-did-node
+- https://github.com/intellltech/grano-did-resolver
